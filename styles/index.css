@@ -1,6 +1,7 @@
 body {
     background-color:#ffffff;
     color: #777;
+    margin: 0;
     font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 h2 {
@@ -22,6 +23,9 @@ p {
     line-height: 20px;
     margin-bottom: 20px;
 }
+li {
+    list-style-type: none;
+}
 
 a {
     text-decoration: none;
@@ -29,6 +33,11 @@ a {
 }
 strong{
     font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
 }
 .wrapper{
     margin: 0 auto;
@@ -39,41 +48,39 @@ strong{
     clear: both;
 }
 /*-------------- header */
-.topnav {
-  position: absolute;
- overflow: hidden;
- height: 48px;
- left: 0px;
- top: 0px;
- right: 0px;
-
-background: #1CE949;
+header {
+    height: 120px;
+    background-color: #1CE949;
+    padding-top: -10px;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a.logo{
+header .wrapper{
+    padding-top: 0px;
+}
+header h1 {
     float: left;
-    
+    margin-top: 32px;
 }
-.topnav a {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+header h1 .color {
+    color: #02b8dd;
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
+header nav {
+    float: right;
+}
+header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 50px;
+}
+header nav ul li a {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+header a:hover {
   background-color: #ddd;
   color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
 }
 
 /* banner image */
@@ -83,7 +90,7 @@ background: #1CE949;
     margin: 0 0 0 0;
     padding-top: 1px;
     margin-left: 0px;
-    background: #eeee url('images/banner.png') no-repeat;
+    background: #eeee url('../images/banner.png') no-repeat;
 }
 .banner-container h2 {
     margin: 180px 0 40px 0;
@@ -124,29 +131,69 @@ background: #1CE949;
     text-align: center;
 }
 .features ul li.feature-1 {
-    background: url('images/feature-1.png') no-repeat top center;
+    background: url('../images/feature-1.png') no-repeat top center;
 }
 .features ul li.feature-2 {
-    background: url('images/feature-2.png') no-repeat top center;
+    background: url('../images/feature-2.png') no-repeat top center;
 }
 .features ul li.feature-3 {
-    background: url('images/feature-3.png') no-repeat top center;
+    background: url('../images/feature-3.png') no-repeat top center;
 }
 .about-container {
     background-color: #f8fafa;
-    padding: 60px 0;
+    padding: 20px 0;
     text-align: center;
 }
 .about-container h3 {
     display: block;
     margin: 0 auto 20px auto;
-    width: 400px;
+    width: 200px;
     border-bottom: 1px solid #1CE949;
     padding: 0 0 20px 0;
 }
 .about-container a img {
     margin: 20px 0;
-    width: 940px;
+    width: 840px;
+}
+/* trainers */
+.trainers-container ul {
+    margin: 50px 0;
+}
+.trainers-container h3 {
+    display: block;
+    margin: 50 auto 20px auto;
+    width: 300px;
+    border-bottom: 1px solid #1CE949 ;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+.trainers-container ul li {
+    
+    padding-top: 140px;
+    float: right;
+    margin-right: 100px;
+    text-align: center;
+}
+.trainers-container ul li.trainer1 {
+    background: url('../images/trainer1.png') no-repeat top center;
+    width: 220px;
+    height: 220px;
+}
+.trainers-container ul li.trainer2 {
+    background: url('../images/trainer2.png') no-repeat top center;
+    width: 220px;
+    height: 220px;
+}
+.trainers-container ul li.trainer3 {
+    background: url('../images/trainer3.png') no-repeat top center;
+    width: 220px;
+    height: 220px;
+}
+.trainers-container ul li.trainer4 {
+    background: #fff url('../images/trainer4.png') no-repeat top center;
+    width: 220px;
+    height: 220px;
 }
 /* footer */
 footer {

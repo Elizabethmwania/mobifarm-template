@@ -1,0 +1,39 @@
+.about-content {
+    padding: 60px 0;
+    text-align: center;
+}
+.about-content article {
+    width: 50%;
+    height: 500px;
+    float: left;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.about-content .aside {
+      width: 40%;
+      float: right;
+      color: white;
+      padding: 5px;
+      margin: 50px;
+      height: 100px;
+}
+article h4 {
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+}
+.more-link {
+    border: 1px solid #02b8dd;
+    color: #02b8dd;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.more-link:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+.separator {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+}
