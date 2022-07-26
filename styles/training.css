@@ -1,0 +1,225 @@
+.banner-container {
+    height: 420px;
+    left: 0px;
+    margin-bottom: 350px;
+    padding-top: 1px;
+    margin-left: 0px;
+    background: #eeee url('../images/banner.png') no-repeat;
+}
+.banner-message {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    color: #fff;
+    width: 880px;
+    height: 350px;
+    font-size: 20px;
+    box-shadow: 10px gray;
+    line-height: 50px;
+    margin: 20px auto;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.row{
+    display: flex;
+}
+.banner-message .column1 {
+    width: 250px;
+    margin: 20px;
+    background-color: #23c186;
+}
+.banner-message .column2 {
+    width: 250px;
+    margin-left: 310px;
+    margin-top: -290px;
+    background-color: #23c186;
+}
+.banner-message .column3 {
+    width: 250px;
+    margin-left: 600px;
+    margin-top: -290px;
+    background-color: #23c186;
+}
+.banner-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  position: relative;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.training-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.training-container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.training-container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+.training-container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+.training-container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+.training-container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.training-container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+.training-container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.training-container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.training-container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.training-container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.training-container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.training-container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.training-container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}

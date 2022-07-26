@@ -7,15 +7,16 @@
     height: 500px;
     float: left;
     padding: 10px;
+    margin-left: 0px;
     background-color: #f5f5f5;
 }
 
-.about-content .aside {
+.about-content aside {
       width: 40%;
       float: right;
-      color: white;
+      color: black;
       padding: 5px;
-      margin: 50px;
+      margin: 10px;
       height: 100px;
 }
 article h4 {
