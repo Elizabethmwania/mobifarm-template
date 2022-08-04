@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Mananagement</title>
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../../assets/vendors/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body style="background-color: #e8ecf1;">
+    <div class="row">
+        <div class="col-md-8 grid-margin stretch-card" style="margin-left: 15%; margin-top: 20px;">
+            <div class="card" style="border: 1px solid #e8ecf1;">
+                <div class="card-body" style="background-color: white;">
+                    <div class="d-sm-flex align-items-center mb-4">
+                        <h4 class="text-dark card-title mb-sm-0">Manage Clients</h4>
+                        <a href="#" class="text-dark ml-auto mb-3 mb-sm-0">View A</a>
+                    </div>
+                    <div class="table-responsive" id="wrapper" style="text-decoration: black;">
+                        <div class="table-responsive">
+                            <table class="table" id="data_table">
+                                <thead>
+                                    <tr>
+                                        <th class="font-weight-bold">First Name</th>
+                                        <th class="font-weight-bold">Last Name</th>
+                                        <th class="font-weight-bold">Acc Number</th>
+                                        <th class="font-weight-bold">Branch</th>
+                                        <th class="font-weight-bold">Manage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="row1">
+                                        <td id="fname_row1">Agnes</td>
+                                        <td id="lname_row1">India</td>
+                                        <td id="acc_row1">946288820</td>
+                                        <td id="branch_row1">Nairobi</td>
+                                        <td>
+                                            <input type="button" id="edit_button1" value="Edit" class="edit"
+                                                onclick="edit_row('1')">
+                                            <input type="button" id="save_button1" value="Save" class="save"
+                                                onclick="save_row('1')">
+                                            <input type="button" value="Delete" class="delete"
+                                                onclick="delete_row('1')">
+                                        </td>
+                                    </tr>
+                                    <tr id="row2">
+                                        <td id="fname_row2">Onesmus</td>
+                                        <td id="lname_row2">Antony</td>
+                                        <td id="acc_row2">946288820</td>
+                                        <td id="branch_row2">Nakuru</td>
+                                        <td>
+                                            <input type="button" id="edit_button1" value="Edit" class="edit"
+                                                onclick="edit_row('2')">
+                                            <input type="button" id="save_button1" value="Save" class="save"
+                                                onclick="save_row('2')">
+                                            <input type="button" value="Delete" class="delete"
+                                                onclick="delete_row('2')">
+                                        </td>
+                                    </tr>
+                                    <tr id="row3">
+                                        <td id="fname_row3">Emmanuel</td>
+                                        <td id="lname_row3">Antony</td>
+                                        <td id="acc_row3">946288820</td>
+                                        <td id="branch_row3">Mombasa</td>
+                                        <td>
+                                            <input type="button" id="edit_button1" value="Edit" class="edit"
+                                                onclick="edit_row('3')">
+                                            <input type="button" id="save_button1" value="Save" class="save"
+                                                onclick="save_row('3')">
+                                            <input type="button" value="Delete" class="delete"
+                                                onclick="delete_row('3')">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex mt-4 flex-wrap" style="margin-left:67%">
+            <nav class="ml-auto">
+                <ul class="pagination separated pagination-info">
+                    <li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-left"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="icon-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</body>
+<script src="./user-management.js"></script>
+
+</html>
