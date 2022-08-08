@@ -76,10 +76,36 @@
                 <section id="step-1" class="form-step">
                     <h2 class="font-normal">Basic Information</h2>
                     <!-- Step 1 input fields -->
-                    <div class="mt-3">
-                        <div class="tab">
-                            <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                            <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                    <div class="form-row" style="padding-top: 20px;">
+                        <div class="form-group col-md-4">
+                            <label for="fname">First Name</label>
+                            <input type="fname" class="form-control" id="fname">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fname">Middle Name</label>
+                            <input type="fname" class="form-control" id="fname">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fname">Last Name</label>
+                            <input type="fname" class="form-control" id="fname">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="idnumber">ID Number</label>
+                            <input type="text" class="form-control" id="idnumber">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="status">Marital Status</label>
+                            <select id="status" class="form-control">
+                                <option selected>Select...</option>
+                                <option>Single</option>
+                                <option>Married</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone">
                         </div>
                     </div>
                     <div class="mt-3">
@@ -88,11 +114,47 @@
                 </section>
                 <!-- Step 2 Content, default hidden on page load. -->
                 <section id="step-2" class="form-step d-none">
-                    <h2 class="font-normal">Social Profiles</h2>
+                    <h2 class="font-normal">Residence</h2>
                     <!-- Step 2 input fields -->
                     <div class="mt-3">
-                        <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                        <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="fname">Country</label>
+                                <select id="status" class="form-control">
+                                    <option selected>Select...</option>
+                                    <option>Kenya</option>
+                                    <option>Uganda</option>
+                                    <option>Tanzania</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fname">County</label>
+                                <select id="status" class="form-control">
+                                    <option selected>Select...</option>
+                                    <option>Kenya</option>
+                                    <option>Uganda</option>
+                                    <option>Tanzania</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="status">Ward</label>
+                                <select id="status" class="form-control">
+                                    <option selected>Select...</option>
+                                    <option>Ward1</option>
+                                    <option>Ward2</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="status">Value of Chain</label>
+                                <select id="status" class="form-control">
+                                    <option selected>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="mt-3">
                         <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
@@ -100,23 +162,83 @@
                     </div>
                 </section>
                 <section id="step-3" class="form-step d-none">
-                    <h2 class="font-normal">Farm</h2>
-                    <!-- Step 2 input fields -->
+                    <h2 class="font-normal">Farm Details</h2>
+                    <!-- Step 3 input fields -->
                     <div class="mt-3">
-                        <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                        <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                        <div class="form-row" style="padding-top: 20px;">
+                            <div class="form-group col-md-4">
+                                <label for="fname">Farm Size</label>
+                                <input type="fname" class="form-control" id="fname">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fname">Farm Coordinates</label>
+                                <input type="fname" class="form-control" id="fname">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fname">Soil Type</label>
+                                <input type="fname" class="form-control" id="fname">
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-4">
+                                <label for="status">Modules Trained</label> <br />
+                                <input type="checkbox" id="poultry">Poultry Farming <br />
+                                <input type="checkbox" id="poultry">Cattle Keepin <br />
+                                <input type="checkbox" id="poultry">Horticulture <br />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="phone">Start Date</label>
+                                <input type="date" class="form-control" id="phone">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="status">Source of Income</label>
+                                <select id="status" class="form-control">
+                                    <option selected>Select...</option>
+                                    <option>Employment</option>
+                                    <option>Business</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="mt-3">
                         <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
                         <button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
                     </div>
                 </section>
-                <!-- Step 3 Content, default hidden on page load. -->
+                <!-- Step 4 Content, default hidden on page load. -->
                 <section id="step-4" class="form-step d-none">
                     <h2 class="font-normal">Kinship</h2>
-                    <!-- Step 3 input fields -->
+                    <!-- Step 4 input fields -->
                     <div class="mt-3">
-                        Step 3 input fields goes here..
+                        <div class="form-row" style="padding-top: 20px;">
+                            <div class="form-group col-md-4">
+                                <label for="fname">First Name</label>
+                                <input type="fname" class="form-control" id="fname">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fname">Middle Name</label>
+                                <input type="fname" class="form-control" id="fname">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fname">Last Name</label>
+                                <input type="fname" class="form-control" id="fname">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="idnumber">ID Number</label>
+                                <input type="text" class="form-control" id="idnumber">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="status">Email Address</label>
+                                <input type="email" class="form-control" id="phone">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone">
+                            </div>
+                        </div>
                     </div>
                     <div class="mt-3">
                         <button class="button btn-navigate-form-step" type="button" step_number="3">Prev</button>
@@ -124,10 +246,17 @@
                     </div>
                 </section>
                 <section id="step-5" class="form-step d-none">
-                    <h2 class="font-normal">Upload</h2>
-                    <!-- Step 3 input fields -->
+                    <h2 class="font-normal">Collateral</h2>
+                    <!-- Step 5 input fields -->
                     <div class="mt-3">
-                        Step 3 input fields goes here..
+                        <div class="form-group col-md-4">
+                            <label for="status">Collateral</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="phone">Net Value</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
                     </div>
                     <div class="mt-3">
                         <button class="button btn-navigate-form-step" type="button" step_number="4">Prev</button>
@@ -135,15 +264,28 @@
                     </div>
                 </section>
                 <section id="step-6" class="form-step d-none">
-                    <h2 class="font-normal">Submit All</h2>
+
                     <!-- Step 3 input fields -->
-                    <div class="mt-3">
-                        Step 3 input fields goes here..
+                    <div class="mt-3" style="margin-left: 40%; padding-top:30px;">
+                        Registration is complete!
                     </div>
-                    <div class="mt-3">
+                    <div class="mt-3" style="margin-left: 40%; padding-top:50px;">
+                        <button class="button btn-navigate-form-step" type="button" step_number="5">Prev</button>
+                        <button class="button submit-btn" type="submit" step_number="7">Submit</button>
+                    </div>
+                </section>
+                <section id="step" class="form-step d-none">
+
+                    <div class="mt-3" style="margin-left: 40%; padding-top:30px;">
+                        <div class="thanks-message text-center" id="text-message"> <img
+                                src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                            <h3>Thanks for your information!</h3> <span>Return Home</span>
+                        </div>
+                    </div>
+                    <!-- <div class="mt-3" style="margin-left: 40%; padding-top:50px;">
                         <button class="button btn-navigate-form-step" type="button" step_number="4">Prev</button>
-                        <button class="button submit-btn" type="submit">Save</button>
-                    </div>
+                        <button class="button submit-btn" type="submit">Submit</button>
+                    </div> -->
                 </section>
             </form>
         </div>

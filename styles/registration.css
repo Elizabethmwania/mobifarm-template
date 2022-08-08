@@ -8,9 +8,13 @@ body{
 h1 {
     text-align: center;
     margin-top: 30px;
+    color: #1CE949;
 }
 h2 {
     margin: 0;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26px;
 }
 #multi-step-form-container {
     background-color: white;
@@ -18,8 +22,10 @@ h2 {
     margin-top:30px;
     margin-left: 10%;
     margin-right: 10%;
-   text-align: center;
-   margin-bottom: 30px;
+    text-align: left;
+}
+#userAccountSetupForm{
+    background-color: white;
 }
 
 .text-center {
@@ -46,14 +52,14 @@ h2 {
     background-color: #09ee2f;
 }
 .mt-3 {
-    margin: 10rem;
+    margin: 0rem;
 }
+
 .d-none {
     display: none;
 }
 .form-step {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border: none;
     padding-top: 20px;
     padding: 1rem;
 }
@@ -121,6 +127,7 @@ ul.form-stepper > li:not(:last-of-type) {
     background-color: #4da3ff;
 }
 .form-stepper-horizontal li:last-child {
+    display: none;
     flex: unset;
 }
 ul.form-stepper li a .form-stepper-circle {
