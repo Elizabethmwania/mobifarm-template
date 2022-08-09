@@ -42,8 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
-                        aria-controls="ui-basic">
+                    <a class="nav-link" href="loans.html">
                         <span class="menu-icon">
                             <i class="mdi mdi-laptop"></i>
                         </span>
@@ -248,8 +247,81 @@
             <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper" style="background-color: #ecf0f4;">
-
                     <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="card bg-success">
+                                <div class="card-body">
+                                    <h2 class="text-md">Paid Loans</h2>
+                                    <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>
+
+                                    <div class="d-flex align-items-baseline justify-content-between">
+                                        <h3 class="mb-0 display-2">$ 41,726</h3>
+                                        <span class="text-info font-weight-bold">
+                                            <i class="zmdi zmdi-long-arrow-up" aria-hidden="true"></i>
+                                            13.7%
+                                        </span>
+                                    </div> <!-- end of d-flex -->
+                                </div> <!-- end of card-body -->
+                                <div class="px-1 py-1 border-top">
+                                    <a href="loans.html"
+                                        class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between">
+                                        View
+                                        <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
+                                    </a>
+                                </div> <!-- end of px-1 -->
+                            </div> <!-- end of card -->
+                        </div> <!-- end of col -->
+                        <div class="col-12 col-md-4">
+                            <div class="card bg-info">
+                                <div class="card-body">
+                                    <h2 class="text-md">Pending Loans</h2>
+                                    <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>
+
+                                    <div class="d-flex align-items-baseline justify-content-between">
+                                        <h3 class="mb-0 display-2">$ 41,726</h3>
+                                        <span class="text-success font-weight-bold">
+                                            <i class="zmdi zmdi-long-arrow-up" aria-hidden="true"></i>
+                                            13.7%
+                                        </span>
+                                    </div> <!-- end of d-flex -->
+                                </div> <!-- end of card-body -->
+                                <div class="px-1 py-1 border-top">
+                                    <a href="/tables"
+                                        class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between">
+                                        View
+                                        <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
+                                    </a>
+                                </div> <!-- end of px-1 -->
+                            </div> <!-- end of card -->
+                        </div> <!-- end of col -->
+
+
+                        <div class="col-12 col-md-4">
+                            <div class="card bg-warning">
+                                <div class="card-body">
+                                    <h2 class="text-md">Overdue Loans</h2>
+                                    <span class="d-inline-block mb-4 text-sm text-secondary">March 1st - April
+                                        1st</span>
+
+                                    <div class="d-flex align-items-baseline justify-content-between">
+                                        <h3 class="mb-0 display-2">$ 15,381</h3>
+                                        <span class="text-danger font-weight-bold">
+                                            <i class="zmdi zmdi-long-arrow-down" aria-hidden="true"></i>
+                                            1.58%
+                                        </span>
+                                    </div> <!-- end of d-flex -->
+                                </div> <!-- end of card-body -->
+                                <div class="px-1 py-1 border-top">
+                                    <a href="/charts"
+                                        class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between">
+                                        Full report
+                                        <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
+                                    </a>
+                                </div> <!-- end of px-1 -->
+                            </div> <!-- end of card -->
+                        </div> <!-- end of col -->
+                    </div>
+                    <div class="row" style="padding-top: 30px;">
                         <div class="col-md-4 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body" style="background-color: rgb(75, 67, 67);">
@@ -276,7 +348,7 @@
                                         </div>
                                         <div class="d-flex">
                                             <span class="square-indicator bg-danger ml-2">&nbsp &nbsp</span>
-                                            <p class="mb-0 ml-2">Arrears</p>
+                                            <p class="mb-0 ml-2">Overdue</p>
                                         </div>
                                     </div>
                                 </div>
@@ -285,7 +357,19 @@
                         <div class="col-md-8 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Loans Statistics Yearly</h4>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <h4 class="card-title">Loans Statistics</h4>
+                                        <div class="form-group mb-0">
+                                            <label for="barChartFilter" class="sr-only">Filter revenue</label>
+                                            <select class="custom-select" id="barChartFilter">
+                                                <option disabled>Filter revenue</option>
+                                                <option>Daily</option>
+                                                <option>Weekly</option>
+                                                <option selected>Monthly</option>
+                                                <option>Yearly</option>
+                                            </select>
+                                        </div> <!-- end of form-group -->
+                                    </div> <!-- end of d-flex -->
                                     <canvas id="barChart" style="height:230px"></canvas>
                                 </div>
 
