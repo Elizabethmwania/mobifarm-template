@@ -26,6 +26,7 @@ const excel_file = document.getElementById('excel_file');
 
             if (sheet_data.length > 0) {
                 var table_output = '<table class="table table-striped table-bordered">';
+              
 
                 for (var row = 0; row < sheet_data.length; row++) {
 
@@ -47,12 +48,15 @@ const excel_file = document.getElementById('excel_file');
                     }
 
                     table_output += '</tr>';
+                    
 
                 }
 
                 table_output += '</table>';
+               
 
                 document.getElementById('excel_data').innerHTML = table_output;
+  
             }
 
             excel_file.value = '';
