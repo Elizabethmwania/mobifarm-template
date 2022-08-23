@@ -4,7 +4,7 @@ document.getElementById('loan-form').addEventListener('submit', function(e){
 
     document.getElementById('loading').style.display = 'block';
     
-    setTimeout(calculateResults, 2000);
+    setTimeout(calculatelimits, 2000);
 
     e.preventDefault();
 
@@ -35,8 +35,11 @@ function calculateLimits(){
       totalInterest.value = ((monthly * calculatedPayments)-principal).toFixed(2);
 
 
-        // show resulsts
-        console.log('limits');
+        // show limits
+        document.getElementById('limits').style.display = 'block';
+
+        //loader
+        document.getElementById('loader').style.display = 'none';
     
     } else {
       showError('Please enter valid numbers');
@@ -49,9 +52,10 @@ function calculateLimits(){
 
 // Show Error
 function showError(error){
+  
 
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('limits').style.display = 'none';
+    document.getElementById('limits').style.display = 'none';;
+    document.getElementById('loader').style.display = 'none';
 
     const errorDiv = document.createElement('div');
   
