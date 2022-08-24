@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Financial Institution</title>
+    <title>Dealer Loans</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -27,14 +27,14 @@
 <body style="background-color: white;">
     <div class="container-scroller">
         <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color: #e8ecf1;">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color: rgb(241, 234, 234);">
             <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
                 style="background-color: rgb(83, 236, 69);">
                 <h3>Mobifarm</h3>
             </div>
             <ul class="nav">
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="finstitution.html">
+                    <a class="nav-link" href="dealer-dashboard.html">
                         <span class="menu-icon">
                             <i class="mdi mdi-speedometer"></i>
                         </span>
@@ -42,55 +42,36 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="loans.html">
-                        <span class="menu-title">Loans Statistics</span>
+                    <a class="nav-link" href="clients.html">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-laptop"></i>
+                        </span>
+                        <span class="menu-title">My clients</span>
                     </a>
-                    <div class="collapse" id="ui-basic">
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="dealer-loans.html">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-playlist-play"></i>
+                        </span>
+                        <span class="menu-title">Loans</span>
+                    </a>
+                </li>
 
-                    </div>
-                </li>
-               
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="registration.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-table-large"></i>
-                        </span>
-                        <span class="menu-title">Create Client</span>
-                    </a>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="farmersRecords.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-chart-bar"></i>
-                        </span>
-                        <span class="menu-title">Farmers Records</span>
-                    </a>
-                </li>
-                <li class="nav-item menu-items">
-                    <a class="nav-link" href="transactions.html">
-                        <span class="menu-icon">
-                            <i class="mdi mdi-file-document-box"></i>
-                        </span>
-                        <span class="menu-title">Transactions</span>
-                    </a>
-                </li>
             </ul>
         </nav>
         <!-- partial -->
-
         <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_navbar.html -->
             <nav class="navbar p-0 fixed-top d-flex flex-row" style="background-color: rgb(78, 158, 70);">
-                <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
-                    <h5 class="mb-0 font-weight-medium d-none d-lg-flex">Welcome Kevin!</h5>
+
+                <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button"
+                        data-toggle="minimize">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
                     <!-- search -->
-                    <ul class="navbar-nav navbar-nav-right ml-auto">
-                        <!-- <form class="search-form d-none d-md-block" action="#">
-                            <i class="icon-magnifier"></i>
-                            <input type="search" class="form-control" placeholder="Search Here" title="Search here"
-                                style="background-color: white;">
-                        </form>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="mdi mdi-email"></i></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="mdi mdi-chart"></i></a></li> -->
+                    <ul class="navbar-nav navbar-nav-right">
                         <li class="nav-item dropdown">
                             <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#"
                                 data-toggle="dropdown" aria-expanded="false">
@@ -154,9 +135,8 @@
                                         </div>
                                     </div>
                                     <div class="preview-item-content">
-                                        <p class="preview-subject mb-1">Event today</p>
-                                        <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event
-                                            today </p>
+                                        <p class="preview-subject mb-1">Approval</p>
+                                        <p class="text-muted ellipsis mb-0"> 5 clients approved successifully </p>
                                     </div>
                                 </a>
                                 <div class="dropdown-divider"></div>
@@ -167,8 +147,8 @@
                                         </div>
                                     </div>
                                     <div class="preview-item-content">
-                                        <p class="preview-subject mb-1">Settings</p>
-                                        <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                                        <p class="preview-subject mb-1">New Clients</p>
+                                        <p class="text-muted ellipsis mb-0"> 10 more clients added </p>
                                     </div>
                                 </a>
                                 <div class="dropdown-divider"></div>
@@ -179,12 +159,10 @@
                                         </div>
                                     </div>
                                     <div class="preview-item-content">
-                                        <p class="preview-subject mb-1">Launch Admin</p>
-                                        <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                                        <p class="preview-subject mb-1">Loans Pending</p>
+                                        <p class="text-muted ellipsis mb-0"> 3 transactions pending </p>
                                     </div>
                                 </a>
-                                <div class="dropdown-divider"></div>
-                                <p class="p-3 mb-0 text-center">See all notifications</p>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -221,8 +199,6 @@
                                         <p class="preview-subject mb-1">Log out</p>
                                     </div>
                                 </a>
-                                <div class="dropdown-divider"></div>
-                                <p class="p-3 mb-0 text-center">Advanced settings</p>
                             </div>
                         </li>
                     </ul>
@@ -232,6 +208,7 @@
                     </button>
                 </div>
             </nav>
+        
             <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper" style="background-color: #ecf0f4;">
