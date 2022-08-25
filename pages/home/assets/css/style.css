@@ -134,7 +134,7 @@ Commom elements
 	padding: 22px 35px;
 	border-radius: 50px;
 	text-transform: uppercase;
-	background: #f43f00;
+	background: #f4005e;
 	color: #fff;
 	line-height: normal;
 	cursor: pointer;
@@ -424,7 +424,7 @@ Header section
 	left: 0;
 	top: 0;
 	padding-left: 53px;
-	background: rgba(120, 241, 6, 0.7);
+	background: rgb(106, 233, 33);
 	z-index: 999;
 }
 
@@ -435,7 +435,7 @@ Header section
 .site-logo {
 	float: left;
 	display: inline-block;
-	padding: 33px 0;
+	padding: 20px 0;
 }
 
 .main-menu {
@@ -479,7 +479,7 @@ Header section
 	visibility: hidden;
 	opacity: 0;
 	margin-top: 50px;
-	background: #fff;
+	background: rgb(106, 233, 33);
 	z-index: 99;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
