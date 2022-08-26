@@ -72,12 +72,14 @@ ul.form-stepper {
 }
 ul.form-stepper .form-stepper-circle {
     position: relative;
+    
 }
 ul.form-stepper .form-stepper-circle span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    
 }
 .form-stepper-horizontal {
     position: relative;
@@ -153,6 +155,7 @@ ul.form-stepper li a .form-stepper-circle {
 }
 .form-stepper .form-stepper-unfinished .form-stepper-circle {
     background-color: #b3b1c4;
+    
 }
 .form-stepper .form-stepper-completed .form-stepper-circle {
     background-color: #09ee2f !important;
