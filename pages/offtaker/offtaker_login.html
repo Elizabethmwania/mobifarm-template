@@ -17,13 +17,13 @@
                 <form class="login">
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" class="login__input" placeholder="Account Number">
+                        <input type="text" id="username" class="login__input" placeholder="Account Number">
                     </div>
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" class="login__input" placeholder="Password">
+                        <input type="password" id="pswd" class="login__input" placeholder="Password">
                     </div>
-                    <button class="button login__submit">
+                    <button class="button login__submit" type="submit" value="Submit">
                         <span class="button__text"><a href="./offtaker.html">Log In Now</a></span>
                         <i class="button__icon fas fa-chevron-right"></i>
                     </button>
@@ -33,6 +33,31 @@
 
         </div>
     </div>
+
+    <script>
+        function verifyLogin() {  
+  var pw = document.getElementById("pswd").value;  
+  //check empty password field  
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }  
+   
+ //minimum password length validation  
+  if(pw.length < 8) {  
+     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+     return false;  
+  }  
+  
+//maximum length of password validation  
+  if(pw.length > 15) {  
+     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+     return false;  
+  } else {  
+     alert("Password is correct");  
+  }  
+}  
+    </script>
 
 
 
