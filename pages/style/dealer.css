@@ -19,7 +19,7 @@
 	position: relative;
 	height: 500px;
 	width: 360px;	
-	box-shadow: 0px 0px 24px #5C5696;
+	box-shadow: 0px 0px 10px #5C5696;
 }
 
 .screen__content {
@@ -28,7 +28,7 @@
 	height: 100%;
 }
 .login {
-	width: 320px;
+	width: 75%;
 	padding: 30px;
 	padding-top: 100px;
 }
@@ -66,14 +66,15 @@
 	background: #fff;
 	font-size: 14px;
 	margin-top: 30px;
-	padding: 16px 20px;
+	margin-left: 20px;
+	padding: 14px 18px;
 	border-radius: 26px;
 	border: 1px solid #D4D3E8;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 600;
 	display: flex;
 	align-items: center;
-	width: 100%;
+	width: 50%;
 	color: #4C489D;
 	box-shadow: 0px 2px 2px #5C5696;
 	cursor: pointer;

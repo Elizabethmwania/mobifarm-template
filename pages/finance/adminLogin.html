@@ -14,19 +14,17 @@
     <div class="container">
         <div class="screen">
             <div class="screen__content">
-                <form class="login">
+                <form class="login" id="authentication">
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" class="login__input" placeholder="Account Number">
+                        <input type="text" id="username" minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+" class="login__input" placeholder="Account Number" required>
                     </div>
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" class="login__input" placeholder="Password">
+                        <input type="password" id="password" minlength="8" class="login__input" placeholder="Password" required>
                     </div>
-                    <button class="button login__submit">
-                        <span class="button__text"><a href="./finstitution.html">Log In Now</a></span>
-                        <i class="button__icon fas fa-chevron-right"></i>
-                    </button>
+                    <input class="button login__submit" id="sub" type="submit" value="Log in" onclick="Verify(event);"></input>
+                   
                 </form>
 
             </div>
@@ -34,8 +32,44 @@
         </div>
     </div>
 
+    <script>
+    //Submit Button
+var attempt = 3;
+function Verify(event) {
+    event.preventDefault();
+
+  var userRef = "Institution";
+  var passRef = "123456789";
+  
+  var user =  document.getElementById("username").value;
+  var pass = document.getElementById("password").value;
+  if (user == userRef && pass == passRef) {
+  alert("Login Successifully");
+  window.location.replace("./finstitution.html");
+  return false;
+  } 
+  else {
+    if(user=="" || pass==""){
+        alert("All fields are require")
+    }else{
+    attempt --;
+    alert("Wrong Credentials!" + "\n" +
+    "You have have left "+attempt+" attempt;");
+
+    document.getElementById("authentication").reset();
+        
+    if(attempt==0){
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("sub").disabled = true;
+        return false;
+    }
+    }
+  }
+};
+    </script>
+
 
 
 </body>
-
 </html>
