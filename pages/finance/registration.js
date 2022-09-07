@@ -66,3 +66,16 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
         navigateToFormStep(stepNumber);
     });
 });
+document.forms['userAccountSetupForm'].addEventListener('submit', function(event) {
+    // Do something with the form's data here
+    this.style['display'] = 'none';
+    event.preventDefault();
+  }); 
+   function infoSubmitted() {
+    var x = document.getElementById("hiddenDiv");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
