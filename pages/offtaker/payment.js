@@ -49,7 +49,6 @@ const excel_file = document.getElementById('excel_file');
 
                     table_output += '</tr>';
                     
-
                 }
 
                 table_output += '</table>';
