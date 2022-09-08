@@ -20348,7 +20348,8 @@ div.tagsinput {
   -ms-transition: left 0.25s ease; }
   @media (max-width: 992px) {
     .navbar {
-      left: 0; } }
+      left: 0; 
+    } }
   .navbar .navbar-brand-wrapper {
     transition: width 0.25s ease, background 0.25s ease;
     -webkit-transition: width 0.25s ease, background 0.25s ease;
@@ -20406,19 +20407,19 @@ div.tagsinput {
         padding-right: 15px; } }
     .navbar .navbar-menu-wrapper .navbar-toggler {
       border: 0;
-      color: #6c7293;
+      color: white;
       height: 70px;
       border-radius: 0px; }
       .navbar .navbar-menu-wrapper .navbar-toggler:not(.navbar-toggler-right) {
         font-size: 0.875rem; }
         @media (max-width: 991px) {
           .navbar .navbar-menu-wrapper .navbar-toggler:not(.navbar-toggler-right) {
-            display: none; } }
+            display: none;} }
       @media (max-width: 991px) {
         .navbar .navbar-menu-wrapper .navbar-toggler.navbar-toggler-right {
           padding-left: 15px;
           padding-right: 11px;
-          border-right: none; } }
+          border-right: none;  } }
     .navbar .navbar-menu-wrapper .search-field .input-group input, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap input {
       font-size: 0.875rem;
       padding: .5rem; }

@@ -33,8 +33,7 @@
     </div>
 
     <script>
-    //Submit Button
-var attempt = 3;
+ var attempt = 3;
 function Verify(event) {
     event.preventDefault();
 
@@ -45,7 +44,7 @@ function Verify(event) {
   var pass = document.getElementById("password").value;
   if (user == userRef && pass == passRef) {
   alert("Login Successifully");
-  window.location.replace("./offtaker.html");
+  window.location.replace("./dealer-dashboard.html");
   return false;
   } 
   else {
@@ -67,6 +66,7 @@ function Verify(event) {
     }
   }
 };
+   
     </script>
 
 
