@@ -44,7 +44,7 @@ function Verify(event) {
   var user =  document.getElementById("username").value;
   var pass = document.getElementById("password").value;
   if (user == userRef && pass == passRef) {
-  alert("Login Successifully");
+  //alert("Login Successifully");
   window.location.replace("./dealer-dashboard.html");
   return false;
   } 
@@ -63,6 +63,12 @@ function Verify(event) {
         document.getElementById("password").disabled = true;
         document.getElementById("sub").disabled = true;
         return false;
+    }
+    //to be implemented
+    function sleep (ms) {
+        return new Promise (
+            resolve => setTimeout (resolve, ms)
+        );
     }
     }
   }
