@@ -232,13 +232,13 @@
             </nav>
             <!-- partial -->
             <div class="col-lg-12 grid-margin stretch-card" style="padding-top: 80px; padding-left:0px;">
-                <div class="card" style="background-color: white;">
+                <div class="card" style="background-color: white; border: 1px solid white;">
 
                     <div class="card-body">
                         <h4 class="card-title" style="color: black;">All Clients </h4>
                         </p>
                         <div class="table-responsive">
-                            <table class="table table-bordered">
+                            <table class="table table-light">
                                 <thead>
                                     <tr>
                                         <th> # </th>
@@ -342,17 +342,22 @@
                                 </tbody>
                             </table>
                         </div>
-                        <ul class="pagination justify-content-center" style="padding-top: 20px;">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
+                        <div class="d-flex mt-4 flex-wrap">
+                            <p class="text-muted">Showing 1 to 10 of 57 entries</p>
+                            <nav class="ml-auto">
+                                <ul class="pagination separated pagination-info">
+                                    <li class="page-item"><a href="#" class="page-link"><i
+                                                class="icon-arrow-left"></i></a></li>
+                                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                    <li class="page-item"><a href="#" class="page-link"><i
+                                                class="icon-arrow-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
